@@ -1,0 +1,54 @@
+.sectionBackground {
+  background-image: linear-gradient(to bottom, #8b8b8b1a, #151515),
+    url("../public/homeNoAuth/backgroundPresentationSection.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1199px) and (min-width: 991px) {
+  .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .imgPresentation {
+    display: flex;
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 590px) {
+  .imgPresentation {
+    width: 95%;
+  }
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 34px;
+  }
+  .description {
+    font-size: 14px;
+    margin: 20px 0px 40px 0px;
+  }
+  .btnCta {
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 367px) {
+  .subTitle {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 12px;
+  }
+}
