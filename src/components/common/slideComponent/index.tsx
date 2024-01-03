@@ -1,7 +1,7 @@
-import { CourseType } from "@/src/services/courseService";
 //@ts-ignore
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/dist/css/splide.min.css";
+import "@splidejs/splide/dist/css/splide.min.css";
+import { CourseType } from "../../../services/courseService";
 import SlideCard from "../slideCard";
 
 interface props {
