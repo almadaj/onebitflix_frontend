@@ -111,7 +111,7 @@ const Register = function () {
             </FormGroup>
             <FormGroup>
               <Label for="email" className={styles.label}>
-                WhatsApp/Telegram
+                E-mail
               </Label>
               <Input
                 id="email"
@@ -140,7 +140,7 @@ const Register = function () {
             </FormGroup>
             <FormGroup>
               <Label for="password" className={styles.label}>
-                SENHA
+                Senha
               </Label>
               <Input
                 id="password"
@@ -155,7 +155,7 @@ const Register = function () {
             </FormGroup>
             <FormGroup>
               <Label for="confirmPassword" className={styles.label}>
-                CONFIRME SUA SENHA
+                Confirme sua senha
               </Label>
               <Input
                 id="confirmPassword"
