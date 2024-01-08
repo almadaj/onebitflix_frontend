@@ -36,7 +36,6 @@ const Register = function () {
     }
     const { data, status } = await authService.register(params);
     if (status === 201) {
-      alert("Cadastrado com sucesso!");
       router.push("/login?registred=true");
     } else {
       setToastIsOpen(true);

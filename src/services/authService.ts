@@ -1,3 +1,4 @@
+import { error } from "console";
 import api from "./api";
 
 interface RegisterParams {
@@ -5,6 +6,11 @@ interface RegisterParams {
   lastName: string;
   phone: string;
   birth: string;
+  email: string;
+  password: string;
+}
+
+interface LoginParams {
   email: string;
   password: string;
 }
@@ -19,6 +25,18 @@ const authService = {
       return error;
     });
 
+    return res;
+  },
+  login: async (params: LoginParams) => {
+    const res = await api.post("/auth/login", params).catch((error) => {
+      if (error.response.status === 400 || error.response.status === 400) {
+        return error.response;
+      }
+      return error;
+    });
+    if (res.status === 200) {
+      sessionStorage.setItem("onebitflix-token", res.data.token);
+    }
     return res;
   },
 };
