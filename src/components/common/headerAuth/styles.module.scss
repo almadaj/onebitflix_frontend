@@ -40,7 +40,7 @@
   background-color: transparent;
   color: white;
   border-radius: $lightGray;
-  &::focus {
+  &:focus {
     background-color: transparent;
     color: white;
     border-color: $mediumGray;
