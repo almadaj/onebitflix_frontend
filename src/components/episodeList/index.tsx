@@ -23,7 +23,11 @@ const EpisodeList = function ({ episode, course }: props) {
   };
 
   const handleEpisodePlayer = () => {
-    router.push(`/courses/episode/${episode.order - 1}?courseId=${course.id}`);
+    router.push(
+      `/courses/episode/${episode.order - 1}?courseId=${course.id}&episodeid=${
+        episode.id
+      }`
+    );
   };
   return (
     <>

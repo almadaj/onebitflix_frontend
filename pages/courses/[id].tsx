@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 import courseService, { CourseType } from "../../src/services/courseService";
 import { Button, Container } from "reactstrap";
 import PageSpinner from "../../src/components/common/spinner";
-//import EpisodeList from "../../src/components/episodeList";
 import Footer from "../../src/components/common/footer";
 import EpisodeList from "@/src/components/episodeList";
 
