@@ -70,7 +70,6 @@ const CoursePage = function () {
   if (loading) {
     return <PageSpinner />;
   }
-
   return (
     <>
       <Head>
